@@ -1,0 +1,92 @@
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width:400px;
+    background:#222;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 15px gold;
+}
+
+h1{
+    color:gold;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:gold;
+    color:#000;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+#scratchCard{
+    position:relative;
+    margin-top:20px;
+}
+
+#result{
+    position:absolute;
+    top:60px;
+    left:0;
+    width:300px;
+    height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+    z-index:1;
+    pointer-events:none;
+}
+
+#scratchCanvas{
+    position:relative;
+    z-index:2;
+}
+
+#scratchCard h3{
+    color:white;
+}
+
+#message{
+    margin-top:20px;
+    color:white !important;
+    font-size:18px;
+    font-weight:bold;
+}
