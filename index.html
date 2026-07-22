@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AS Giveaway</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>AS CLOTHES COLLECTION</h1>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Enter Instagram Username">
+
+    <button onclick="startGame()">
+      Play Giveaway
+    </button>
+
+    <p id="message"></p>
+    <div id="scratchCard" style="display:none; margin-top:20px;">
+    <h3>🎁 Scratch Your Gift</h3>
+
+      <div id="result"></div>
+    <canvas id="scratchCanvas" width="300" height="120"></canvas>
+
+    
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
