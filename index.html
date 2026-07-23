@@ -9,30 +9,39 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>AS CLOTHES COLLECTION</h1>
+<div class="container">
 
-    <input
-      type="text"
-      id="username"
-      placeholder="Enter Instagram Username">
+  <h1>AS CLOTHES COLLECTION</h1>
 
-    <button onclick="startGame()">
-      Play Giveaway
-    </button>
+  <input
+    type="text"
+    id="username"
+    placeholder="Enter Instagram Username">
 
-    <p id="message"></p>
-    <div id="scratchCard" style="display:none; margin-top:20px;">
+  <button onclick="startGame()">
+    Play Giveaway
+  </button>
+
+  <p id="message"></p>
+
+  <div id="scratchCard" style="display:none; margin-top:20px;">
+
     <h3>🎁 Scratch Your Gift</h3>
 
+    <div id="scratchArea">
       <div id="result"></div>
-    <canvas id="scratchCanvas" width="300" height="120"></canvas>
-
     
+      <canvas id="scratchCanvas" width="300" height="120"></canvas>
     </div>
+    <p id="countdown" style="display:none;color:#ffd700;font-size:18px;font-weight:bold;margin-top:15px;"></p>
+<button id="claimBtn" style="display:none;">
+    📩 Claim on Instagram
+</button>
   </div>
 
-  <script src="script.js"></script>
+</div>
 
+<script src="script.js"></script>
+<canvas id="confetti"></canvas>
 </body>
-</html>
+</html
